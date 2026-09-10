@@ -3,43 +3,43 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Propiedades y Administración de Recursos Públicos en Colombia | Guía 2026</title>
-<meta name="description" content="Guía completa sobre propiedades y administración de recursos públicos en Colombia. Conoce cómo el Estado gestiona su patrimonio, el marco legal y cómo ejercer control social.">
-<meta name="keywords" content="recursos públicos Colombia, administración pública, propiedades del Estado, patrimonio público, control fiscal, gestión pública">
-<meta name="author" content="Recursos Públicos Colombia">
+<title>Análisis de Certificados en Colombia | Guía Completa 2026</title>
+<meta name="description" content="Guía completa sobre el análisis y verificación de certificados en Colombia. Aprende a validar la autenticidad de documentos oficiales y a detectar irregularidades.">
+<meta name="keywords" content="análisis de certificados Colombia, verificación de certificados, validar certificados, autenticidad documentos, certificados oficiales">
+<meta name="author" content="Análisis de Certificados Colombia">
 <meta name="robots" content="index, follow">
 <meta name="language" content="Spanish">
 <meta name="revisit-after" content="7 days">
 
 <!-- Open Graph -->
-<meta property="og:title" content="Propiedades y Administración de Recursos Públicos en Colombia | Guía 2026">
-<meta property="og:description" content="Guía completa sobre propiedades y administración de recursos públicos en Colombia. Conoce cómo el Estado gestiona su patrimonio y el marco legal aplicable.">
+<meta property="og:title" content="Análisis de Certificados en Colombia | Guía Completa 2026">
+<meta property="og:description" content="Guía completa sobre el análisis y verificación de certificados en Colombia. Aprende a validar la autenticidad de documentos oficiales.">
 <meta property="og:type" content="article">
 <meta property="og:locale" content="es_CO">
-<meta property="og:site_name" content="Recursos Públicos Colombia">
+<meta property="og:site_name" content="Análisis de Certificados Colombia">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Propiedades y Administración de Recursos Públicos en Colombia">
-<meta name="twitter:description" content="Guía completa sobre propiedades y administración de recursos públicos en Colombia.">
+<meta name="twitter:title" content="Análisis de Certificados en Colombia">
+<meta name="twitter:description" content="Guía completa sobre el análisis y verificación de certificados en Colombia.">
 
 <!-- Canonical -->
-<link rel="canonical" href="https://recursospublicos.co/">
+<link rel="canonical" href="https://analisiscertificados.co/">
 
 <!-- Schema.org JSON-LD -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Propiedades y Administración de Recursos Públicos en Colombia",
-  "description": "Guía completa sobre propiedades y administración de recursos públicos en Colombia.",
+  "headline": "Análisis de Certificados en Colombia",
+  "description": "Guía completa sobre el análisis y verificación de certificados en Colombia.",
   "author": {
     "@type": "Organization",
-    "name": "Recursos Públicos Colombia"
+    "name": "Análisis de Certificados Colombia"
   },
   "publisher": {
     "@type": "Organization",
-    "name": "Recursos Públicos Colombia"
+    "name": "Análisis de Certificados Colombia"
   },
   "datePublished": "2026-01-15",
   "dateModified": "2026-01-15",
@@ -54,26 +54,26 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "¿Qué son las propiedades públicas?",
+      "name": "¿Qué es el análisis de certificados?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Son todos los bienes, derechos y obligaciones que pertenecen al Estado, incluyendo bienes de uso público, bienes fiscales, recursos naturales y patrimonio cultural."
+        "text": "Es el proceso mediante el cual se revisa, valida y verifica la autenticidad, vigencia y coherencia de un certificado emitido por una entidad autorizada."
       }
     },
     {
       "@type": "Question",
-      "name": "¿Quién administra los recursos públicos en Colombia?",
+      "name": "¿Cómo puedo verificar la autenticidad de un certificado?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Los administran los servidores públicos y los particulares habilitados legalmente. La responsabilidad recae sobre los gestores fiscales."
+        "text": "Se puede verificar a través del portal web de la entidad emisora, utilizando el código único de verificación o el código QR que suele incluir el documento."
       }
     },
     {
       "@type": "Question",
-      "name": "¿Qué entidades controlan el uso de los recursos públicos?",
+      "name": "¿Qué tipos de certificados existen en Colombia?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "La Contraloría General de la República, las contralorías territoriales, la Procuraduría General de la Nación, la Fiscalía General de la Nación y las oficinas de control interno."
+        "text": "Existen certificados laborales, de ingresos, de residencia, de antecedentes, de existencia y representación legal, de paz y salvo, entre otros."
       }
     }
   ]
@@ -523,9 +523,7 @@
     text-underline-offset: 3px;
   }
 
-  .article-content a:hover {
-    color: var(--agua-oscuro);
-  }
+  .article-content a:hover { color: var(--agua-oscuro); }
 
   .article-content blockquote {
     border-left: 4px solid var(--agua-oscuro);
@@ -654,6 +652,60 @@
     margin: 0 auto;
     position: relative;
     z-index: 1;
+  }
+
+  /* PROCESS STEPS */
+  .steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+    gap: 1.25rem;
+    counter-reset: step;
+  }
+
+  .step {
+    background: var(--blanco);
+    border: 1px solid var(--borde-suave);
+    border-radius: 18px;
+    padding: 1.75rem;
+    position: relative;
+    box-shadow: var(--sombra-suave);
+    transition: all 0.3s ease;
+    counter-increment: step;
+  }
+
+  .step:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--sombra-media);
+    border-color: rgba(13, 92, 99, 0.25);
+  }
+
+  .step::before {
+    content: counter(step);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background: var(--agua-oscuro);
+    color: white;
+    border-radius: 10px;
+    font-weight: 800;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .step h3 {
+    font-size: 1.05rem;
+    color: var(--texto-oscuro);
+    font-weight: 800;
+    margin-bottom: 0.6rem;
+    line-height: 1.35;
+  }
+
+  .step p {
+    color: var(--texto-medio);
+    font-size: 0.9rem;
+    line-height: 1.7;
   }
 
   /* FAQ */
@@ -1096,7 +1148,7 @@
     .hero { padding: 3.5rem 1.25rem 3rem; }
     .highlight-section { padding: 3rem 1.25rem; border-radius: 20px; }
     .cta-final { padding: 3rem 1.5rem; border-radius: 20px; margin: 2rem 1rem; }
-    .card, .about-card { padding: 1.5rem; }
+    .card, .about-card, .step { padding: 1.5rem; }
     th, td { padding: 0.85rem 1rem; font-size: 0.85rem; }
     .breadcrumb { padding: 0 1.25rem; }
 
@@ -1131,7 +1183,7 @@
     .stats-grid { padding: 1.5rem 1rem; }
     .stat-number { font-size: 1.6rem; }
 
-    .card, .about-card { padding: 1.35rem; border-radius: 16px; }
+    .card, .about-card, .step { padding: 1.35rem; border-radius: 16px; }
     .highlight-section { padding: 2.5rem 1rem; border-radius: 16px; }
     .cta-final { padding: 2.5rem 1.25rem; border-radius: 16px; margin: 1.5rem 0.75rem; }
 
@@ -1160,22 +1212,23 @@
 <!-- HEADER -->
 <header class="header">
   <div class="header-inner">
-    <a href="#" class="logo" aria-label="Recursos Públicos Colombia">
+    <a href="#" class="logo" aria-label="Análisis de Certificados Colombia">
       <span class="logo-mark">
         <svg viewBox="0 0 24 24">
-          <path d="M3 21h18M5 21V7l8-4v18M19 21V11l-6-4"/>
-          <path d="M9 9v.01M9 12v.01M9 15v.01"/>
+          <path d="M9 12l2 2 4-4"/>
+          <path d="M12 2a10 10 0 1 0 10 10"/>
+          <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2"/>
         </svg>
       </span>
       <span class="logo-text">
-        Recursos Públicos
-        <small>Información & Propiedades</small>
+        Análisis de Certificados
+        <small>Colombia · Informativo</small>
       </span>
     </a>
     <nav class="header-nav" aria-label="Navegación principal">
       <a href="#intro">Introducción</a>
-      <a href="#propiedades">Propiedades</a>
-      <a href="#administracion">Administración</a>
+      <a href="#tipos">Tipos</a>
+      <a href="#proceso">Proceso</a>
       <a href="#faq">Preguntas</a>
       <a href="#nosotros">Nosotros</a>
     </nav>
@@ -1187,9 +1240,9 @@
 <nav class="breadcrumb" aria-label="Ruta de navegación">
   <a href="/">Inicio</a>
   <span>›</span>
-  <a href="/recursos-publicos">Recursos Públicos</a>
+  <a href="/certificados">Certificados</a>
   <span>›</span>
-  <span>Propiedades y Administración</span>
+  <span>Análisis y Verificación</span>
 </nav>
 
 <!-- HERO -->
@@ -1198,8 +1251,8 @@
 <div class="hero">
   <div class="hero-inner">
     <div class="badge">Guía Informativa 2026</div>
-    <h1>Información, <span>propiedades</span> y administración de recursos públicos</h1>
-    <p>Un recurso educativo e informativo sobre cómo el Estado colombiano gestiona, administra y supervisa las propiedades y los recursos que pertenecen a la Nación.</p>
+    <h1>Análisis y verificación de <span>certificados</span> en Colombia</h1>
+    <p>Un recurso educativo e informativo sobre cómo se analizan, validan y verifican los certificados y documentos oficiales emitidos por entidades autorizadas en Colombia.</p>
     <div class="hero-buttons">
       <a href="#intro" class="btn-primary">
         Comenzar lectura
@@ -1207,7 +1260,7 @@
           <path d="M5 12h14M12 5l7 7-7 7"/>
         </svg>
       </a>
-      <a href="#propiedades" class="btn-secondary">Ver propiedades</a>
+      <a href="#proceso" class="btn-secondary">Ver proceso</a>
     </div>
   </div>
 </div>
@@ -1221,15 +1274,15 @@
     </div>
     <div class="stat-item">
       <div class="stat-number">6</div>
-      <div class="stat-label">Conceptos clave</div>
+      <div class="stat-label">Tipos de certificados</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">5</div>
+      <div class="stat-label">Pasos de verificación</div>
     </div>
     <div class="stat-item">
       <div class="stat-number">2026</div>
       <div class="stat-label">Actualizado</div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-number">4</div>
-      <div class="stat-label">Niveles del Estado</div>
     </div>
   </div>
 </div>
@@ -1238,35 +1291,62 @@
 <section id="intro">
   <div class="section-header">
     <div class="section-label">Introducción</div>
-    <h2 class="section-title">¿Qué son las <span>propiedades y recursos públicos</span>?</h2>
-    <p class="section-subtitle">Las propiedades y recursos públicos constituyen el patrimonio del Estado y son administrados por servidores públicos y particulares habilitados para ello, bajo principios de transparencia, eficiencia y legalidad.</p>
+    <h2 class="section-title">¿Qué es el <span>análisis de certificados</span>?</h2>
+    <p class="section-subtitle">El análisis de certificados es el proceso mediante el cual se revisa, valida y verifica la autenticidad, vigencia y coherencia de un documento oficial emitido por una entidad autorizada.</p>
   </div>
 
   <div class="article-content">
-    <p>En Colombia, las <strong>propiedades públicas</strong> y los <strong>recursos públicos</strong> conforman el patrimonio del Estado y representan todos aquellos bienes, derechos y obligaciones que pertenecen a la Nación. Su administración es una actividad reglada, sujeta a principios constitucionales y legales, que busca garantizar el uso adecuado de los bienes del Estado para el beneficio de todos los ciudadanos.</p>
+    <p>En Colombia, los <strong>certificados</strong> son documentos oficiales expedidos por entidades públicas o privadas autorizadas, que dan fe de un hecho, una situación jurídica, una calidad o el cumplimiento de determinados requisitos. Son herramientas fundamentales en los procesos administrativos, laborales, legales y académicos del país.</p>
 
-    <p>La administración de recursos públicos comprende el conjunto de actividades mediante las cuales los servidores públicos y los particulares habilitados gestionan los bienes, fondos y derechos que pertenecen a la Nación. Esta función se ejerce en todos los niveles del Estado: <strong>nacional, departamental, municipal y distrital</strong>.</p>
+    <p>El <strong>análisis de certificados</strong> consiste en examinar cada uno de los elementos que componen el documento para confirmar que la información contenida es veraz, que el documento fue emitido por la entidad que dice emitirlo y que mantiene su vigencia al momento de la verificación.</p>
 
     <blockquote>
-      El objetivo principal de esta administración es garantizar que los recursos del Estado se utilicen de manera eficiente, transparente y conforme a los fines constitucionales.
+      Verificar correctamente un certificado permite detectar irregularidades, prevenir fraudes y garantizar que los procesos administrativos se realicen con base en información veraz y confiable.
     </blockquote>
 
-    <h3>Importancia de conocer cómo funciona</h3>
-    <p>Comprender cómo funciona la administración de recursos públicos es fundamental para que los ciudadanos puedan ejercer su derecho al control social y participar activamente en la vigilancia de la gestión pública. La transparencia en el manejo del patrimonio público es un pilar fundamental de la democracia.</p>
+    <h3>¿Por qué es importante verificar un certificado?</h3>
+    <p>La verificación de certificados es fundamental por varias razones:</p>
+    <ul>
+      <li><strong>Prevención del fraude:</strong> permite detectar documentos falsificados o alterados.</li>
+      <li><strong>Seguridad jurídica:</strong> garantiza que las decisiones se tomen con base en información verificada.</li>
+      <li><strong>Transparencia:</strong> contribuye a la confiabilidad de los procesos administrativos.</li>
+      <li><strong>Protección de derechos:</strong> asegura que los ciudadanos no sean víctimas de suplantación o engaño.</li>
+    </ul>
 
-    <p>El Estado colombiano cuenta con un marco normativo robusto que regula la gestión de los recursos públicos, estableciendo responsabilidades claras para los gestores fiscales y mecanismos de control para prevenir irregularidades.</p>
+    <p>Este sitio tiene como propósito <strong>explicar cómo funciona el análisis de certificados</strong> y qué aspectos se deben tener en cuenta al momento de validar un documento oficial. No expedimos certificados ni realizamos trámites; únicamente ofrecemos información educativa sobre el tema.</p>
   </div>
 </section>
 
-<!-- PROPIEDADES -->
-<section id="propiedades">
+<!-- TIPOS -->
+<section id="tipos">
   <div class="section-header">
-    <div class="section-label">Propiedades Públicas</div>
-    <h2 class="section-title">Tipos de <span>propiedades del Estado</span></h2>
-    <p class="section-subtitle">El patrimonio público se clasifica en diferentes categorías según su naturaleza, uso y régimen jurídico aplicable.</p>
+    <div class="section-label">Tipos de Certificados</div>
+    <h2 class="section-title">Certificados más <span>comunes en Colombia</span></h2>
+    <p class="section-subtitle">Cada tipo de certificado tiene características propias y elementos específicos que deben verificarse durante su análisis.</p>
   </div>
 
   <div class="grid">
+    <div class="card">
+      <div class="card-icon">
+        <svg viewBox="0 0 24 24">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+          <path d="M14 2v6h6M16 13H8M16 17H8"/>
+        </svg>
+      </div>
+      <h3>Certificados Laborales</h3>
+      <p>Documentos emitidos por empleadores que certifican la vinculación laboral, el cargo, el salario y la duración de la relación laboral de un trabajador.</p>
+    </div>
+
+    <div class="card">
+      <div class="card-icon">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+        </svg>
+      </div>
+      <h3>Certificados de Ingresos</h3>
+      <p>Documentos que certifican los ingresos percibidos por una persona o entidad en un periodo determinado. Suelen ser requeridos para trámites financieros y crediticios.</p>
+    </div>
+
     <div class="card">
       <div class="card-icon">
         <svg viewBox="0 0 24 24">
@@ -1274,42 +1354,8 @@
           <path d="M9 9v.01M9 12v.01M9 15v.01"/>
         </svg>
       </div>
-      <h3>Bienes de Uso Público</h3>
-      <p>Son aquellos destinados al uso y goce de todos los habitantes, como calles, parques, playas, ríos y espacios públicos. Son inalienables, imprescriptibles e inembargables.</p>
-    </div>
-
-    <div class="card">
-      <div class="card-icon">
-        <svg viewBox="0 0 24 24">
-          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-          <path d="M14 2v6h6"/>
-        </svg>
-      </div>
-      <h3>Bienes Fiscales</h3>
-      <p>Son los bienes que pertenecen al Estado y que este utiliza para su funcionamiento o para generar rentas, como edificios administrativos, terrenos y vehículos oficiales.</p>
-    </div>
-
-    <div class="card">
-      <div class="card-icon">
-        <svg viewBox="0 0 24 24">
-          <path d="M12 2a10 10 0 1 0 10 10"/>
-          <path d="M12 6v6l4 2"/>
-        </svg>
-      </div>
-      <h3>Recursos Naturales</h3>
-      <p>Comprenden el suelo, subsuelo, aguas, recursos minerales, forestales y biológicos. Su administración es responsabilidad del Estado y se rige por normas especiales.</p>
-    </div>
-
-    <div class="card">
-      <div class="card-icon">
-        <svg viewBox="0 0 24 24">
-          <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-          <circle cx="9" cy="7" r="4"/>
-          <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-        </svg>
-      </div>
-      <h3>Patrimonio Cultural</h3>
-      <p>Son los bienes materiales e inmateriales que representan la identidad cultural de la Nación, como monumentos, obras de arte, sitios arqueológicos y tradiciones.</p>
+      <h3>Certificados de Residencia</h3>
+      <p>Documentos que acreditan el lugar de residencia de una persona, emitidos por autoridades locales o entidades competentes según la normativa vigente.</p>
     </div>
 
     <div class="card">
@@ -1320,8 +1366,20 @@
           <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2"/>
         </svg>
       </div>
-      <h3>Participaciones y Acciones</h3>
-      <p>El Estado puede ser propietario de acciones o participaciones en empresas públicas, mixtas o privadas, lo que forma parte de su patrimonio financiero.</p>
+      <h3>Certificados de Antecedentes</h3>
+      <p>Documentos que certifican la ausencia o presencia de antecedentes judiciales, disciplinarios o fiscales de una persona, según la entidad que los emita.</p>
+    </div>
+
+    <div class="card">
+      <div class="card-icon">
+        <svg viewBox="0 0 24 24">
+          <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+          <circle cx="9" cy="7" r="4"/>
+          <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+        </svg>
+      </div>
+      <h3>Certificados de Existencia y Representación</h3>
+      <p>Documentos emitidos por cámaras de comercio que certifican la existencia legal de una empresa y quién es su representante legal autorizado.</p>
     </div>
 
     <div class="card">
@@ -1331,135 +1389,102 @@
           <circle cx="12" cy="12" r="3"/>
         </svg>
       </div>
-      <h3>Fondos y Rentas</h3>
-      <p>Son los recursos financieros que el Estado administra a través de fondos especiales, cuentas y rentas destinadas a fines específicos de interés público.</p>
+      <h3>Certificados de Paz y Salvo</h3>
+      <p>Documentos que certifican que una persona o entidad no tiene deudas pendientes con una entidad específica, ya sea pública o privada.</p>
     </div>
   </div>
 </section>
 
-<!-- ADMINISTRACIÓN -->
-<div class="highlight-section" id="administracion">
+<!-- PROCESO -->
+<div class="highlight-section" id="proceso">
   <div class="highlight-inner">
     <div class="section-header">
-      <div class="section-label">Administración</div>
-      <h2 class="section-title">¿Cómo se <span>administran</span> los recursos públicos?</h2>
-      <p class="section-subtitle">La administración de recursos públicos es un proceso reglado que involucra planeación, ejecución, control y rendición de cuentas.</p>
+      <div class="section-label">Proceso de Análisis</div>
+      <h2 class="section-title">¿Cómo se <span>analiza</span> un certificado?</h2>
+      <p class="section-subtitle">El análisis de un certificado sigue una serie de pasos que permiten verificar su autenticidad y validez de forma sistemática.</p>
     </div>
 
-    <div class="grid">
-      <div class="card">
-        <div class="card-icon">
-          <svg viewBox="0 0 24 24">
-            <path d="M9 12l2 2 4-4"/>
-            <path d="M12 2a10 10 0 1 0 10 10"/>
-            <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2"/>
-          </svg>
-        </div>
-        <h3>Planeación y Presupuesto</h3>
-        <p>Las entidades planifican el uso de los recursos a través de planes de desarrollo y presupuestos aprobados por los órganos legislativos correspondientes.</p>
+    <div class="steps">
+      <div class="step">
+        <h3>Verificación de la entidad emisora</h3>
+        <p>Se confirma que la entidad que aparece como emisora del certificado existe, está autorizada para expedirlo y cuenta con las facultades legales para ello.</p>
       </div>
 
-      <div class="card">
-        <div class="card-icon">
-          <svg viewBox="0 0 24 24">
-            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
-          </svg>
-        </div>
-        <h3>Ejecución de Recursos</h3>
-        <p>Los recursos se ejecutan mediante contratos, convenios, subsidios y proyectos de inversión, con soportes legales y técnicos que respaldan cada gasto.</p>
+      <div class="step">
+        <h3>Revisión de los datos del documento</h3>
+        <p>Se examinan los datos personales, las fechas, los números de radicado, los sellos y las firmas que contiene el certificado para confirmar su coherencia interna.</p>
       </div>
 
-      <div class="card">
-        <div class="card-icon">
-          <svg viewBox="0 0 24 24">
-            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
-            <circle cx="12" cy="12" r="3"/>
-          </svg>
-        </div>
-        <h3>Control y Vigilancia</h3>
-        <p>La Contraloría General de la República y las contralorías territoriales vigilan el uso de los recursos evaluando legalidad, eficiencia y transparencia.</p>
+      <div class="step">
+        <h3>Verificación del código único</h3>
+        <p>Muchos certificados incluyen un código único de verificación o un código QR que permite consultar su autenticidad directamente en el sistema de la entidad emisora.</p>
       </div>
 
-      <div class="card">
-        <div class="card-icon">
-          <svg viewBox="0 0 24 24">
-            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-            <path d="M14 2v6h6M16 13H8M16 17H8"/>
-          </svg>
-        </div>
-        <h3>Rendición de Cuentas</h3>
-        <p>Las entidades públicas están obligadas a rendir cuentas ante la ciudadanía mediante informes, audiencias públicas y portales de transparencia.</p>
+      <div class="step">
+        <h3>Consulta en plataformas oficiales</h3>
+        <p>Se consultan las plataformas digitales de la entidad emisora para confirmar que el certificado fue efectivamente expedido y se encuentra vigente.</p>
       </div>
 
-      <div class="card">
-        <div class="card-icon">
-          <svg viewBox="0 0 24 24">
-            <path d="M12 2a10 10 0 1 0 10 10"/>
-            <path d="M12 8v4l3 3"/>
-          </svg>
-        </div>
-        <h3>Sanciones y Responsabilidad</h3>
-        <p>Los gestores fiscales pueden enfrentar procesos de responsabilidad fiscal, disciplinaria, penal y administrativa por irregularidades en el uso de recursos.</p>
-      </div>
-
-      <div class="card">
-        <div class="card-icon">
-          <svg viewBox="0 0 24 24">
-            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-            <circle cx="9" cy="7" r="4"/>
-            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-          </svg>
-        </div>
-        <h3>Participación Ciudadana</h3>
-        <p>La ciudadanía puede participar mediante veedurías, audiencias públicas y consultas ciudadanas contempladas en la Ley 1757 de 2015.</p>
+      <div class="step">
+        <h3>Validación de la vigencia</h3>
+        <p>Se verifica que el certificado se encuentre dentro de su periodo de validez, ya que muchos documentos tienen fechas de expiración o requieren actualización periódica.</p>
       </div>
     </div>
   </div>
 </div>
 
-<!-- MARCO LEGAL -->
+<!-- SEÑALES DE ALERTA -->
 <section>
   <div class="section-header">
-    <div class="section-label">Marco Legal</div>
-    <h2 class="section-title">Normas de <span>referencia</span></h2>
-    <p class="section-subtitle">Principales normas que regulan la administración, transparencia y control de los recursos y propiedades públicas en Colombia.</p>
+    <div class="section-label">Señales de Alerta</div>
+    <h2 class="section-title">Indicadores de <span>posibles irregularidades</span></h2>
+    <p class="section-subtitle">Existen ciertos elementos que pueden sugerir que un certificado podría presentar irregularidades y que ameritan una verificación más profunda.</p>
   </div>
 
-  <div class="table-wrapper">
-    <table>
-      <thead>
-        <tr>
-          <th scope="col">Norma</th>
-          <th scope="col">Descripción general</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr class="highlight">
-          <td><span class="tag">Constitución Política</span></td>
-          <td>Establece los principios de la función administrativa y el control fiscal</td>
-        </tr>
-        <tr>
-          <td><span class="tag">Ley 610 de 2000</span></td>
-          <td>Define la gestión fiscal y regula el proceso de responsabilidad fiscal</td>
-        </tr>
-        <tr>
-          <td><span class="tag">Ley 850 de 2003</span></td>
-          <td>Regula las veedurías ciudadanas y el control social</td>
-        </tr>
-        <tr>
-          <td><span class="tag">Ley 1712 de 2014</span></td>
-          <td>Establece el derecho de acceso a la información pública</td>
-        </tr>
-        <tr>
-          <td><span class="tag">Ley 1757 de 2015</span></td>
-          <td>Estatuto de Participación Ciudadana</td>
-        </tr>
-        <tr>
-          <td><span class="tag">Ley 2195 de 2022</span></td>
-          <td>Programa de Transparencia y Ética Pública</td>
-        </tr>
-      </tbody>
-    </table>
+  <div class="grid">
+    <div class="card">
+      <div class="card-icon">
+        <svg viewBox="0 0 24 24">
+          <path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+          <path d="M12 9v4M12 17h.01"/>
+        </svg>
+      </div>
+      <h3>Inconsistencias en los datos</h3>
+      <p>Diferencias entre los datos del certificado y la información que debería contener según el tipo de documento o la entidad emisora.</p>
+    </div>
+
+    <div class="card">
+      <div class="card-icon">
+        <svg viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="10"/>
+          <path d="M12 16v-4M12 8h.01"/>
+        </svg>
+      </div>
+      <h3>Ausencia de elementos de seguridad</h3>
+      <p>Falta de sellos, firmas, códigos de verificación o elementos de seguridad que normalmente incluyen los certificados oficiales.</p>
+    </div>
+
+    <div class="card">
+      <div class="card-icon">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 2a10 10 0 1 0 10 10"/>
+          <path d="M12 8v4l3 3"/>
+        </svg>
+      </div>
+      <h3>Certificados vencidos</h3>
+      <p>Documentos cuya fecha de vigencia ha expirado y que, por lo tanto, ya no tienen validez para los fines que fueron emitidos.</p>
+    </div>
+
+    <div class="card">
+      <div class="card-icon">
+        <svg viewBox="0 0 24 24">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+          <path d="M14 2v6h6"/>
+        </svg>
+      </div>
+      <h3>Formatos no oficiales</h3>
+      <p>Documentos que no siguen el formato establecido por la entidad emisora o que presentan diferencias significativas con los modelos oficiales.</p>
+    </div>
   </div>
 </section>
 
@@ -1468,43 +1493,48 @@
   <div class="section-header">
     <div class="section-label">Preguntas Frecuentes</div>
     <h2 class="section-title">Respuestas a tus <span>dudas</span></h2>
-    <p class="section-subtitle">Las preguntas más comunes sobre propiedades y administración de recursos públicos en Colombia.</p>
+    <p class="section-subtitle">Las preguntas más comunes sobre el análisis y verificación de certificados en Colombia.</p>
   </div>
 
   <div class="faq-list">
     <div class="faq-item">
-      <h3>¿Qué son las propiedades públicas?</h3>
-      <p>Son todos los bienes, derechos y obligaciones que pertenecen al Estado, incluyendo bienes de uso público, bienes fiscales, recursos naturales y patrimonio cultural.</p>
+      <h3>¿Qué es el análisis de certificados?</h3>
+      <p>Es el proceso mediante el cual se revisa, valida y verifica la autenticidad, vigencia y coherencia de un certificado emitido por una entidad autorizada, con el fin de garantizar que la información contenida sea veraz y confiable.</p>
     </div>
 
     <div class="faq-item">
-      <h3>¿Quién administra los recursos públicos en Colombia?</h3>
-      <p>Los administran los servidores públicos y los particulares habilitados legalmente. La responsabilidad recae sobre los gestores fiscales, quienes pueden ser personas naturales o jurídicas.</p>
+      <h3>¿Este sitio expide certificados?</h3>
+      <p>No. Este sitio web es un recurso exclusivamente informativo y educativo. No expedimos certificados, no realizamos trámites ni ofrecemos servicios de emisión de documentos. Únicamente publicamos información sobre cómo se analizan y verifican los certificados.</p>
     </div>
 
     <div class="faq-item">
-      <h3>¿Qué es un gestor fiscal?</h3>
-      <p>Es toda persona o entidad que, por mandato legal o contractual, administra, maneja o dispone de bienes o fondos públicos. Su responsabilidad es independiente de su naturaleza jurídica.</p>
+      <h3>¿Cómo puedo verificar la autenticidad de un certificado?</h3>
+      <p>Puede hacerlo a través del portal web de la entidad emisora, utilizando el código único de verificación o el código QR que suele incluir el documento. También puede acudir directamente a la entidad que lo expidió.</p>
     </div>
 
     <div class="faq-item">
-      <h3>¿Qué entidades controlan el uso de los recursos públicos?</h3>
-      <p>Las principales son la Contraloría General de la República, las contralorías territoriales, la Procuraduría General de la Nación, la Fiscalía General de la Nación y las oficinas de control interno.</p>
+      <h3>¿Qué tipos de certificados existen en Colombia?</h3>
+      <p>Existen certificados laborales, de ingresos, de residencia, de antecedentes, de existencia y representación legal, de paz y salvo, académicos, médicos, entre otros. Cada uno tiene una función específica dentro de los procesos administrativos.</p>
     </div>
 
     <div class="faq-item">
-      <h3>¿Cómo puede un ciudadano vigilar el uso de los recursos públicos?</h3>
-      <p>Los ciudadanos pueden conformar veedurías ciudadanas, solicitar información pública, presentar PQRSFD, participar en audiencias públicas y denunciar irregularidades ante las autoridades competentes.</p>
+      <h3>¿Qué hago si detecto un certificado falso?</h3>
+      <p>Si detecta un certificado presuntamente falso, se recomienda denunciar ante la entidad emisora, la Fiscalía General de la Nación o la Policía Nacional, aportando toda la documentación que permita la investigación correspondiente.</p>
     </div>
 
     <div class="faq-item">
-      <h3>¿Qué es la responsabilidad fiscal?</h3>
-      <p>Es la responsabilidad que tienen los gestores fiscales por el daño causado al patrimonio público como consecuencia de la gestión irregular de los recursos.</p>
+      <h3>¿Los certificados tienen fecha de vencimiento?</h3>
+      <p>Depende del tipo de certificado. Algunos tienen vigencia definida por la entidad emisora (por ejemplo, 30, 60 o 90 días), mientras que otros no expiran. Es importante verificar la vigencia al momento de utilizarlos.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>¿Puedo verificar un certificado sin acudir a la entidad?</h3>
+      <p>En muchos casos sí. La mayoría de entidades emisoras cuentan con plataformas digitales que permiten verificar la autenticidad de los certificados de forma virtual mediante códigos únicos o códigos QR.</p>
     </div>
 
     <div class="faq-item">
       <h3>¿La información de este sitio tiene validez oficial?</h3>
-      <p>No. Este sitio es informativo y educativo. Para trámites oficiales, consultas específicas o actuaciones legales, se recomienda acudir directamente a las entidades públicas correspondientes.</p>
+      <p>No. Este sitio es informativo y educativo. Para trámites oficiales, consultas específicas o actuaciones legales, se recomienda acudir directamente a las entidades públicas o privadas correspondientes.</p>
     </div>
   </div>
 </section>
@@ -1514,46 +1544,46 @@
   <div class="section-header">
     <div class="section-label">Sobre Nosotros</div>
     <h2 class="section-title">Quiénes <span>somos</span></h2>
-    <p class="section-subtitle">Un recurso informativo independiente dedicado a la divulgación de información sobre propiedades y administración de recursos públicos en Colombia.</p>
+    <p class="section-subtitle">Un recurso informativo independiente dedicado a la divulgación de información sobre el análisis y verificación de certificados en Colombia.</p>
   </div>
 
   <div class="about-grid">
     <div class="about-card">
       <h3>Quiénes somos</h3>
-      <p>Somos un portal informativo y educativo independiente dedicado a la divulgación de contenidos sobre propiedades, administración, control y transparencia de los recursos públicos en Colombia.</p>
+      <p>Somos un portal informativo y educativo independiente dedicado a la divulgación de contenidos sobre análisis, verificación y validación de certificados oficiales en Colombia.</p>
     </div>
 
     <div class="about-card">
       <h3>Qué hacemos</h3>
-      <p>Publicamos guías, análisis y contenidos educativos basados en fuentes oficiales del Estado colombiano, con el fin de acercar a los ciudadanos al conocimiento de la gestión pública.</p>
+      <p>Publicamos guías, análisis y contenidos educativos basados en fuentes oficiales, con el fin de acercar a los ciudadanos al conocimiento sobre cómo se verifican los certificados. No expedimos certificados ni ofrecemos servicios de emisión de documentos.</p>
     </div>
 
     <div class="about-card">
       <h3>Nuestra misión</h3>
-      <p>Promover la transparencia, la cultura de la legalidad y el control social mediante la difusión de información clara, accesible y basada en fuentes oficiales.</p>
+      <p>Promover la transparencia y la cultura de la verificación mediante la difusión de información clara y accesible sobre el análisis de certificados y documentos oficiales.</p>
     </div>
 
     <div class="about-card">
       <h3>Contacto</h3>
-      <p>Si tienes preguntas, sugerencias o comentarios sobre nuestro contenido, puedes escribirnos a: <a href="mailto:info@recursospublicos.co">info@recursospublicos.co</a></p>
+      <p>Si tienes preguntas, sugerencias o comentarios sobre nuestro contenido, puedes escribirnos a: <a href="mailto:info@analisiscertificados.co">info@analisiscertificados.co</a></p>
     </div>
 
     <div class="about-card">
       <h3>Fuentes de información</h3>
-      <p>Toda la información publicada se basa en fuentes oficiales: Constitución Política de Colombia, leyes de la República, documentos de la Contraloría General y demás entidades gubernamentales.</p>
+      <p>Toda la información publicada se basa en fuentes oficiales: normativa colombiana vigente, documentos de entidades emisoras de certificados y guías de verificación publicadas por las autoridades competentes.</p>
     </div>
 
     <div class="about-card">
       <h3>Descargo de responsabilidad</h3>
-      <p>La información publicada tiene carácter exclusivamente informativo y educativo. No constituye asesoría legal, financiera ni de ningún otro tipo. Para trámites oficiales, consulte las fuentes oficiales.</p>
+      <p>La información publicada tiene carácter exclusivamente informativo y educativo. No constituye asesoría legal ni de ningún otro tipo. Este sitio no expide certificados ni realiza trámites oficiales.</p>
     </div>
   </div>
 </section>
 
 <!-- CTA FINAL -->
 <div class="cta-final">
-  <h2>Comprende cómo se administran los recursos de tu país</h2>
-  <p>La información es el primer paso para ejercer control social y contribuir a la transparencia en la gestión pública.</p>
+  <h2>Aprende a verificar la autenticidad de un certificado</h2>
+  <p>La verificación correcta de documentos es el primer paso para prevenir fraudes y garantizar la confiabilidad de los procesos.</p>
   <a href="#intro" class="btn-white">Volver al inicio</a>
 </div>
 
@@ -1573,15 +1603,14 @@
     <span class="sep">·</span>
     <a href="#nosotros">Sobre Nosotros</a>
     <span class="sep">·</span>
-    <a href="mailto:info@recursospublicos.co">Contacto</a>
+    <a href="mailto:info@analisiscertificados.co">Contacto</a>
   </nav>
 
-  <p>Guía informativa y educativa sobre propiedades y administración de recursos públicos en Colombia.</p>
+  <p>Guía informativa y educativa sobre el análisis y verificación de certificados en Colombia.</p>
 
   <p class="footer-meta">
-    <strong>Recursos Públicos Colombia</strong> · Portal informativo independiente · info@recursospublicos.co<br>
-    Fuentes oficiales: <a href="https://www.contraloria.gov.co" target="_blank" rel="noopener">Contraloría General</a> · <a href="https://www.funcionpublica.gov.co" target="_blank" rel="noopener">Función Pública</a> · <a href="https://www.dnp.gov.co" target="_blank" rel="noopener">DNP</a><br>
-    © 2026 Recursos Públicos Colombia. Todos los derechos reservados.
+    <strong>Análisis de Certificados Colombia</strong> · Portal informativo independiente · info@analisiscertificados.co<br>
+    © 2026 Análisis de Certificados Colombia. Todos los derechos reservados.
   </p>
 </footer>
 
@@ -1610,4 +1639,4 @@
 </script>
 
 </body>
-  </html>
+</html>
